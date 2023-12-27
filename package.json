@@ -1,0 +1,29 @@
+{
+  "name": "node-js-learning",
+  "version": "1.0.0",
+  "description": "Node js learnig tutorial",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nehagit0730/nodejsproject.git"
+  },
+  "keywords": [
+    "Node",
+    "Node",
+    "tutorial",
+    "Node",
+    "learning"
+  ],
+  "author": "Neha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nehagit0730/nodejsproject/issues"
+  },
+  "homepage": "https://github.com/nehagit0730/nodejsproject#readme",
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
+}
