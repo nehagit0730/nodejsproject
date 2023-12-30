@@ -5,3 +5,6 @@ for(i=0;i<4;i++)
 {
   fs.writeFileSync(dirPath+"/filename"+i+".txt","A simple text file");
 }
+
+
+/* for making 1 ore more then 1 file by using forloop.*/
