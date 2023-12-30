@@ -1,4 +1,4 @@
-
+const port = 4500;
 
 const express = require('express');
 const path = require('path');
@@ -13,14 +13,21 @@ app.get('',(req,res)=> {
 res.sendFile(`${publicPath}/index.html`)
 });
 
+// dynamic profile page
 app.get('/profile',(req,res)=> {
     const user = {
-        name: 'Neha',
-        email: 'neha@gmail.com',
-        city: 'Dharamshala'
+        name:'Neha',
+        email:'neha@gmail.com',
+        city:'Dharamshala',
+        country:'India',
+        skills:['php','java','html','javascript','css']
     }
     res.render('profile',{user});
     });
+
+    app.get('/login',(req,res)=> {
+        res.render('login');
+        });
 
 app.get('/contact',(req,res)=> {
     res.sendFile(`${publicPath}/contact.html`)
@@ -34,5 +41,5 @@ app.get('*',(req,res)=> {
             res.sendFile(`${publicPath}/nopage.html`)
     });
 
-app.listen(4500);
+app.listen(port);
 

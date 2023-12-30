@@ -36,11 +36,16 @@
         <h1>Profile page</h1>
         <h1>Welcome <%= user.name %></h1>
         <h3><%= user.email %></h3>
+        <ul>
+            <% user.skills.forEach((item)=>{ %>
+                <li> <%= item %> </li>
+                <% }) %>
+        </ul> 
     </header>
 
 
     <footer>
-        <p>&copy; 2023 Your Company. All rights reserved.</p>
+        <p>Copyright &copy; 2020</p>
     </footer>
 
 </body>
