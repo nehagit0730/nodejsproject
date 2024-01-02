@@ -6,4 +6,4 @@ const main = async ()=>{
     console.log(data);
 }
 
-main();
+main();   //read data from mongoDB
